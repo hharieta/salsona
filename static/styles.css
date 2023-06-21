@@ -457,9 +457,6 @@ ul {
 		column-count: 2;
 	}
 
-	.experience__left {
-		margin: 4rem 2rem 2rem 2rem;
-	}
 }
 
 @media (min-width: 768px) {
@@ -473,6 +470,10 @@ ul {
 		margin: 1rem;
 		flex-direction: column;
 		column-count: 2;
+	}
+
+	.experience__left {
+		margin: 4rem 2rem 2rem 2rem;
 	}
 }
 
