@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Girassol|Fjalla+One|Noto+Sans|Slabo+27px&display=swap");
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .title {
+    font-size: 40px;
+    color: #025157;
+    margin-bottom: 12px;
+  }
+  .text-main__info {
+    line-height: 20px;
+    color: #58694e;
+    margin-bottom: 12px;
+  }
+  .slider-card {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 55%;
+    width: 55%;
+    margin: 3rem auto 3rem auto;
+  }
+  .slide-cards {
+    min-width: 330px;
+    order: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .subtitle-5 {
+    color: #025157;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  .subtitle-3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 16px;
+  }
+  .card {
+    display: none;
+    flex-direction: column;
+    margin: auto 0;
+    border-radius: 10px;
+    background-color: white;
+  }
+  #item-2:checked ~ .slide-cards #selector-2,
+  #item-1:checked ~ .slide-cards #selector-1,
+  #item-3:checked ~ .slide-cards #selector-3 {
+    display: flex;
+  }
+  .card-content {
+    padding: 16px;
+  }
+  .card-info {
+    display: flex;
+  }
+  .card-info > .icon {
+    width: 24px;
+    margin-right: 8px;
+  }
+  .card-info > .text-info-soft {
+    font-size: 14px;
+    color: #c2c2c2;
+  }
+  .card > .card-footer {
+    margin-top: auto;
+    padding: 0 16px;
+    padding-bottom: 16px;
+  }
+  .btn.btn-primary {
+    border: solid 1px #025157;
+    color: #fffbf7;
+    font-weight: 600;
+    background-color: #025157;
+    border-radius: 5px;
+    padding: 8px 16px;
+  }
+  .btn.btn-primary:hover {
+    background-color: #025157ec;
+    cursor: pointer;
+  }
+  .btn.btn-primary:focus {
+    box-shadow: 0 0 0 1px #02515798;
+  }
+  .btn.btn-primary:active {
+    background-color: #025157e2;
+  }
+  .btn.expanded {
+    width: 100%;
+  }
+  .card > .card-cover-image {
+    height: 300px;
+    position: relative;
+  }
+  .card > .card-cover-image > .logo {
+    display: flex;
+    font-size: 24px;
+    font-weight: 800;
+    color: #35bfd3;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    bottom: -20px;
+    border-radius: 1000px;
+    position: absolute;
+    background: #f9da73;
+    width: 100px;
+    height: 100px;
+  }
+  .card > .card-cover-image .img-fluid {
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .slider-card .selectors {
+    margin-top: 12px;
+    order: 3;
+  }
+  .slider-card > input[type="radio"] {
+    display: none;
+  }
+  .slider-card > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border: solid #025157 2px;
+  }
+  .slider-card > .selectors:hover {
+    cursor: pointer;
+  }
+  .slider-card > input[type="radio"]:checked {
+    color: #025157;
+  }
+  .slider-card > input[type="radio"]:checked + *::before {
+    background: #025157;
+    border-color: #025157;
+  }
