@@ -407,7 +407,7 @@ ul {
 	overflow: hidden;
 	padding: 0;
 	box-shadow: none;
-	margin: 4rem 2rem 2rem 2rem
+	/* margin: 4rem 2rem 2rem 2rem */
 }
 
 .experience__left h3 {
@@ -455,6 +455,10 @@ ul {
 		margin: 1rem;
 		flex-direction: column;
 		column-count: 2;
+	}
+
+	.experience__left {
+		margin: 4rem 2rem 2rem 2rem;
 	}
 }
 
