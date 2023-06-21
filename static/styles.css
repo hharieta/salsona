@@ -91,7 +91,6 @@ ul {
 }
 
 .logo img {
-	padding: 1rem;
 	height: var(--header-height);
 }
 
@@ -135,6 +134,18 @@ ul {
 .actions-btn2:hover {
 	background-color: var(--first-color);
 }
+
+@media (max-width: 575px) {
+	.navbar,
+	.actions {
+		display: none;
+	}
+	/* .main {
+		margin-top: 130px;
+	  } */
+}
+
+
 
 /*====== HERO ======*/
 
