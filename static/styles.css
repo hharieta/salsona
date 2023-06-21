@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&display=swap');
 
 :root {
-	--header-height: 5rem;
+	--header-height: 4rem;
 
 	--first-color: #f35383;
 	--first-color-light: #fa92b1;
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-	margin-top: var(--header-height);
+	/* margin-top: var(--header-height); */
 	min-height: calc(100vh - var(--header-height));
 	color: var(--text-color);
 	display: grid;
@@ -68,20 +68,9 @@ ul {
 }
 
 /*====== HEADER ======*/
-
-.header {
-	height: var(--header-height);
-	background-color: var(--bg-color);
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-	box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+.navbar {
+	background-color: var(--first-color-light);
 }
-
 .logo {
 	height: var(--header-height);
 	display: flex;
@@ -93,40 +82,22 @@ ul {
 .logo img {
 	height: var(--header-height);
 }
-
-.nav {
-	max-width: 1400px;
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.nav__list {
-	display: flex;
-	gap: 2.5rem;
-}
-
-.nav__link {
-	color: var(--text-color-light);
-	font-weight: 600;
-}
-
 .actions {
 	display: flex;
 	gap: 1.5rem;
 	align-items: center;
+	align-content: center;
 }
 
 .actions-btn {
 	font-weight: 500;
+	color: var(--bg-color);
 }
 
 .actions-btn2 {
 	background-color: var(--first-color-light);
 	padding: 0.5rem 1rem;
-	color: #FFF;
+	color: var(--bg-color);
 	border-radius: 4px;
 	transition: 0.2s;
 }
@@ -135,14 +106,31 @@ ul {
 	background-color: var(--first-color);
 }
 
-@media (max-width: 575px) {
-	.actions{
-		display: none;
+@media (max-width: 991px) {
+	.actions,
+	.navbar {
+	  text-align: center;
 	}
-	 /* .main {
-    margin-top: 130px;
-  } */
-}
+	.actions-btn2 {
+		margin-left: 12rem;
+	}
+	.actions-btn {
+		margin-left: 12rem;
+	}
+  }
+  
+  @media (max-width: 575px) {
+	.actions,
+	.navbar {
+	  text-align: center;
+	}
+	.actions-btn2 {
+		margin-left: 3rem;
+	}
+	.actions-btn {
+		margin-left: 3rem;
+	}
+  }
 
 /*====== HERO ======*/
 
