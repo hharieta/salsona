@@ -87,6 +87,8 @@
     margin-top: auto;
     padding: 0 16px;
     padding-bottom: 16px;
+    background-color: #ffffff00;
+    border-top: none;
   }
   .btn.btn-primary {
     border: solid 1px #025157;
