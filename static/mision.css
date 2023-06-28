@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Girassol|Noto+Sans|Slabo+27px&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&display=swap');
+
+:root {
+	--header-height: 4rem;
+
+	--first-color: #f35383;
+	--first-color-light: #fa92b1;
+
+	--second-color: #e8c571;
+	--second-color-light: #f5dca2;
+
+	--title-color: #212529;
+	--text-color: #343a40;
+	--text-color-light: #6c757d;
+
+	--bg-color: #f8f9fa;
+	--bg-color-alt: #eff1f3;
+
+	--color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Slabo 27px", "Noto Sans";
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--first-color);
+}
+
+.header p {
+    color: var(--text-color);
+    font-family: "Noto Sans";
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+main {
+    margin-top: 285px;
+    text-align: center;
+}
+
+.btn-group button{
+    background-color: var(--second-color);
+    border-color: var(--first-color-light);
+}
