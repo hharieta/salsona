@@ -1,10 +1,10 @@
 # La Salsona
 
-![La Salsona](assets/img/logo2.png)
+![La Salsona](assets/img/01.png)
 
 ## About
 
-This project is a e-commerce mobile application for La Salsona.
+This project is a e-commerce web page for La Salsona.
 
 
 
