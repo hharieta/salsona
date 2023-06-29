@@ -1,0 +1,6 @@
+.gitignore
+.git
+.vscode
+*.md
+.cache
+.DS_Store
