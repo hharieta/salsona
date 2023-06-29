@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Girassol|Noto+Sans|Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&display=swap");
+/** fuentes */
+/** placeholders */
+.blog .title {
+  font-family: "Slabo 27px", "Noto Sans";
+  font-weight: 800;
+  color: #f35383;
+}
+
+.blog {
+  background-color: #eff1f3;
+  max-width: unset;
+  padding: 5% 10%;
+  margin-top: 5rem;
+}
+.blog .title {
+  font-size: 3rem;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #f35383;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.blog .process-list .process > div > p {
+  color: #343a40;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+  border-color: #e8c571;
+  background-color: #f35383;
+  color: #f8f9fa;
+}
+
+/*# sourceMappingURL=action.css.map */

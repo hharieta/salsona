@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Girassol|Noto+Sans|Slabo+27px&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&display=swap');
+
+$header-height: 4rem;
+
+$first-color: #f35383;
+$first-color-light: #fa92b1;
+
+$second-color: #e8c571;
+$second-color-light: #f5dca2;
+
+$title-color: #212529;
+$text-color: #343a40;
+$text-color-light: #6c757d;
+
+$bg-color: #f8f9fa;
+$bg-color-alt: #eff1f3;
+
+$color-white: #fff;
+
+
+/** fuentes */
+$font-title: "Slabo 27px", "Noto Sans";
+
+/** placeholders */
+%base-title {
+  font-family: $font-title;
+  font-weight: 800;
+  color: $first-color;
+}

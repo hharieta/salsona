@@ -1,0 +1,58 @@
+@use 'global' as *;
+
+
+.blog {
+    background-color: $bg-color-alt;
+    max-width: unset;
+    padding: 5% 10%;
+    margin-top: 5rem;
+    .title {
+        font-size: 3rem;
+        @extend %base-title;
+      }
+    
+      .process-list {
+        margin-top: 40px;
+        margin-bottom: 36px;
+    
+        .process {
+            margin-bottom: 25px;
+        
+            & > div {
+                & > h3 {
+                color: $first-color;
+                margin-bottom: 0;
+                font-size: 1.5rem;
+                font-weight: 800;
+                }
+                & > p {
+                color: $text-color;
+                margin: 0;
+                }
+            }
+
+            .process-icon {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+        
+                img {
+                height: 100%;
+                }
+            }
+        }
+    }
+    
+    button {
+        height: auto;
+        border-radius: 8px;
+        border: none;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+        border-color: $second-color;
+        background-color: $first-color;
+        color: $bg-color;
+    }
+}
