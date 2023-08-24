@@ -140,7 +140,7 @@ ul {
 	width: 100%;
 	display: grid;
 	place-items: center;
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: linear-gradient(
 		to right,
