@@ -561,6 +561,7 @@ ul {
 
 .footer {
 	width: 100%;
+	margin-top: 10rem;
 	padding: 1rem;
 	/* display: flex; */
 	justify-content: center;
