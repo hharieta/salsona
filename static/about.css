@@ -85,12 +85,27 @@ ul {
 	padding: 3rem;
 	gap: 3rem;
 }
+
+@media (min-width: 1024px) {
+	.about__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 .about__rigth {
 	background: none;
 	border-radius: none;
 	overflow: hidden;
 	padding: 0;
 	box-shadow: none;
+    align-content: center;
+}
+.about__rigth img {
+	background: none;
+	border-radius: none;
+	overflow: hidden;
+	padding: 0;
+	box-shadow: none;
+    align-items: center;
 }
 
 .about__left {
