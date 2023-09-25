@@ -56,3 +56,28 @@ main {
     background-color: var(--second-color);
     border-color: var(--first-color-light);
 }
+
+.faq {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .faq h2 {
+    color: var(--first-color);
+    font-family: "Slabo 27px", "Noto Sans";
+  }
+  
+  .faq .accordion-header {
+    background-color: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  
+  .faq h2 > button {
+    color: var(--first-color);
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  
+  .faq .accordion .accordion-body a {
+    color: var(--second-color);
+  }

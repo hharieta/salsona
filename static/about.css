@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Girassol|Noto+Sans|Slabo+27px&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&display=swap');
+
+:root {
+	--header-height: 4rem;
+
+	--first-color: #f35383;
+	--first-color-light: #fa92b1;
+
+	--second-color: #e8c571;
+	--second-color-light: #f5dca2;
+
+	--title-color: #212529;
+	--text-color: #343a40;
+	--text-color-light: #6c757d;
+
+	--bg-color: #f8f9fa;
+	--bg-color-alt: #eff1f3;
+
+	--color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	/* margin-top: var(--header-height); */
+	min-height: calc(100vh - var(--header-height));
+	color: var(--text-color);
+	display: grid;
+	grid-template-rows: 1fr auto;
+	background-color: var(--bg-color);
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1rem;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+}
+h2,
+h3 {
+	font-family: 'Slabo 27px', serif;
+	color: var(--title-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	line-height: 150%;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+.about {
+	width: 100%;
+	background-color: var(--first-color);
+	padding: 4rem 0;
+	border-radius: 4rem;
+	margin-bottom: 4rem;
+}
+
+.about__container {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1400px;
+	padding: 3rem;
+	gap: 3rem;
+}
+.about__rigth {
+	background: none;
+	border-radius: none;
+	overflow: hidden;
+	padding: 0;
+	box-shadow: none;
+}
+
+.about__left {
+	background: none;
+	border-radius: none;
+	overflow: hidden;
+	padding: 0;
+	box-shadow: none;
+	/* margin: 4rem 2rem 2rem 2rem */
+}
+
+.about__left h3 {
+	color: #fffbf7;
+    font-family: "Slabo 27px", "Noto Sans";
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about__left p {
+	color: #fffbf7;
+    font-family: "Noto Sans";
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+.about__left i {
+	color: #fffbf7;
+    background-color: var(--text-color-light);
+    /* font-family: "Noto Sans";
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 1rem; */
+}

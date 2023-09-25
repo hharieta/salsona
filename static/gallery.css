@@ -52,6 +52,7 @@ main {
     text-align: center;
 }
   .grid-gallery {
+    margin: 2rem;
     display: grid;
     grid-auto-rows: 200px;
     gap: 1rem;
