@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Girassol|Noto+Sans|Slabo+27px&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&display=swap');
+
+:root {
+	--header-height: 4rem;
+
+	--first-color: #f35383;
+	--first-color-light: #fa92b1;
+
+	--second-color: #e8c571;
+	--second-color-light: #f5dca2;
+
+	--title-color: #212529;
+	--text-color: #343a40;
+	--text-color-light: #6c757d;
+
+	--bg-color: #f8f9fa;
+	--bg-color-alt: #eff1f3;
+
+	--color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* body {
+	min-height: calc(100vh - var(--header-height));
+	color: var(--text-color);
+	display: grid;
+	grid-template-rows: 1fr auto;
+	background-color: var(--bg-color);
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1rem;
+}
+
+
+.forms {
+    width: 100%;
+	background-color: none;
+	padding: 4rem 0;
+	border-radius: none;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.forms__container {
+	display: grid;
+	background-color: var(--first-color-light);
+	border-radius: 2rem;
+	width: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8rem;
+	grid-template-columns: repeat(1, 0);
+	max-width: 1400px;
+	padding: 3rem;
+	gap: 3rem;
+}
+
+.forms__politica{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background: none;
+	border-radius: none;
+	overflow: hidden;
+	padding: 0;
+	box-shadow: none;
+    align-content: center;
+}
+
+@media (min-width: 1024px) {
+	.about__container {
+		grid-template-columns: repeat(1, 0);
+	}
+}
+
+.input__group {
+    
+    text-align: left;
+}
+
+.forms__container .input__group h2 {
+    color: var(--first-color-light);
+} */
+
+body {
+	font-family: 'Fjalla One', sans-serif;
+	min-height: calc(100vh - var(--header-height));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.forms {
+	margin-top: 8rem;
+	padding: 50px 55px;
+	box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+	border-radius: 20px;
+	text-align: center;
+	width: 340px;
+	font-family: 'Slabo 27px', serif;;
+}
+
+.input__group{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.forms h2 {
+	color: var(--first-color);
+	font-family: 'Pacifico', cursive;
+	font-size: 2rem;
+}
+
+.forms label {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-top: 0.5rem;
+}
+
+.forms input, textarea {
+	padding: 17px, 25px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	color: var(--text-color);
+	background-color: var(--first-color-light);
+	border: 2px solid var(--first-color-light);
+	outline-color: var(--second-color);
+}
+
+.forms input::placeholder, textarea::placeholder{
+	color: var(--bg-color-alt);
+}
+
+.form__txt {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.form__txt a {
+	font-size: 14px;
+	color: var(--text-color);
+	font-weight: 600;
+}
+
+.form__btn {
+	font-size: 16px;
+	color: var(--first-color);
+	border: 0;
+	border-radius: 25px;
+	background-color: 0 0 20px var(--first-color-light);
+	cursor: pointer;
+}
+
+.form__btn:hover{
+	background-color: var(--second-color);
+	border-color: var(--second-color);
+}
+
+@media(max-width: 991px){
+	body{ 
+		padding: 30px;
+	}
+
+	.forms {
+		padding: 50px 30px;
+		width: 100%;
+	}
+
+	.forms input {
+		padding: 15px;
+	}
+}
+

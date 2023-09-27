@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assets/img/logo2-1.png" />
+    <link rel="stylesheet" href="static/styles.css" />
+    <link rel="stylesheet" href="static/contac.css" />
+    <script
+      src="https://kit.fontawesome.com/967737f4f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>LaSalsona</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="assets/img/logo2.png" alt="LaSalsona" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="filos.html">Filosofía</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Conocenos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="blog.html">Opiniones</a></li>
+                <li>
+                  <a class="dropdown-item" href="faq.html"
+                    >Preguntas frecuentes</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="about.html"
+                    >Acerca de nosotros</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <div class="actions">
+            <a href="#" class="actions-btn">Iniciar sesión</a>
+            <a href="#" class="actions-btn2">Registrarse</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="header">
+      <section>
+        <div>
+          <form class="forms" action="https://formsubmit.co/hector.h.arieta@gmail.com" method="POST">
+                <h2  style="text-align: center;">Contacto</h2>
+                <div class="input__group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Telefono">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                    <div class="form__txt">
+                        <a href="#">Política de privacidad</a>
+                        <a href="#">Terminos y condiciones</a>
+                    </div>
+                    <input class="form__btn" type="submit" value="Enviar">
+                    <input type="hidden" name="_subject" value="contacto">
+                    <input type="hidden" type="_next" value="http://127.0.0.1:5500/index.html">
+                </div>
+          </form>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+      <div class="group-1">
+        <div class="box">
+          <figure>
+            <a
+              href="https://www.instagram.com/lasalsona/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src="assets/img/Salson_logo.png" alt="La Salsona" />
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <a href="about.html" class="textlink">
+            <p>¿Quiénes somos?</p>
+          </a>
+          <a href="filos.html" class="textlink">
+            <p>Nuestra misión</p>
+          </a>
+          <a href="faq.html" class="textlink">
+            <p>Preguntas frecuentes</p>
+          </a>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <div class="icons">
+              <a
+                href="https://www.instagram.com/lasalsona/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="icon icon--instagram"
+              >
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="icon icon--twitter"
+              >
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100095026651686"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="icon icon--facebook"
+              >
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="icon icon--youtube"
+              >
+                <i class="fa fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-2">
+        <small>
+          &copy; 2023 <b>La Salsona: siente el chile, disfruta el sabor </b>
+        </small>
+      </div>
+      <div class="group-3">
+        <small> Made with 😻 by Gatovsky </small>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
